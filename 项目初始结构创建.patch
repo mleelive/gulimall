@@ -1,0 +1,2164 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(revision c264177ef61d0bc35ef9759cb822c5d8a9813616)
++++ .gitignore	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -1,23 +1,19 @@
+-# Compiled class file
+-*.class
+-
+-# Log file
+-*.log
++target/
++pom.xml.tag
++pom.xml.releaseBackup
++pom.xml.versionBackup
++pom.xml.next
++release.properties
++dependency-reduced-pom.xml
++buildNumber.properties
++.mvn/timing.properties
++.mvn/wrapper/maven-wrapper.jar
+ 
+-# BlueJ files
+-*.ctxt
++**/mvnw
++**/mvnw.cmd
+ 
+-# Mobile Tools for Java (J2ME)
+-.mtj.tmp/
++**/.mvn
++**/target/
++.idea
+ 
+-# Package Files #
+-*.jar
+-*.war
+-*.nar
+-*.ear
+-*.zip
+-*.tar.gz
+-*.rar
+-
+-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+-hs_err_pid*
++**/.gitignore
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.gitignore	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/.gitignore	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,3 @@
++
++# Default ignored files
++/workspace.xml
+\ No newline at end of file
+Index: .idea/codeStyles/codeStyleConfig.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/codeStyles/codeStyleConfig.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/codeStyles/codeStyleConfig.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,5 @@
++<component name="ProjectCodeStyleConfiguration">
++  <state>
++    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />
++  </state>
++</component>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/compiler.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,35 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="gulimall-product" />
++        <module name="gulimall-coupon" />
++        <module name="gulimall-ware" />
++        <module name="gulimall-member" />
++        <module name="gulimall-order" />
++      </profile>
++    </annotationProcessing>
++    <bytecodeTargetLevel>
++      <module name="gulimall" target="1.8" />
++      <module name="gulimall-coupon" target="1.8" />
++      <module name="gulimall-member" target="1.8" />
++      <module name="gulimall-order" target="1.8" />
++      <module name="gulimall-product" target="1.8" />
++      <module name="gulimall-ware" target="1.8" />
++    </bytecodeTargetLevel>
++  </component>
++  <component name="JavacSettings">
++    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
++      <module name="gulimall" options="-parameters" />
++      <module name="gulimall-coupon" options="-parameters" />
++      <module name="gulimall-member" options="-parameters" />
++      <module name="gulimall-order" options="-parameters" />
++      <module name="gulimall-product" options="-parameters" />
++      <module name="gulimall-ware" options="-parameters" />
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/encodings.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/encodings.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/gulimall-coupon" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/gulimall-member" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/gulimall-order" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/gulimall-product" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/gulimall-ware" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gulimall.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gulimall.iml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/gulimall.iml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,30 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
++  <component name="FacetManager">
++    <facet type="Spring" name="Spring">
++      <configuration />
++    </facet>
++    <facet type="web" name="Web">
++      <configuration>
++        <webroots />
++        <sourceRoots>
++          <root url="file://$MODULE_DIR$/gulimall-ware/src/main/java" />
++          <root url="file://$MODULE_DIR$/gulimall-ware/src/main/resources" />
++        </sourceRoots>
++      </configuration>
++    </facet>
++  </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
++    <output url="file://$MODULE_DIR$/target/classes" />
++    <output-test url="file://$MODULE_DIR$/target/test-classes" />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/gulimall-ware/src/main/java" isTestSource="false" />
++      <sourceFolder url="file://$MODULE_DIR$/gulimall-ware/src/test/java" isTestSource="true" />
++      <sourceFolder url="file://$MODULE_DIR$/gulimall-ware/src/main/resources" type="java-resource" />
++      <excludeFolder url="file://$MODULE_DIR$/gulimall-ware/target" />
++      <excludeFolder url="file://$MODULE_DIR$/target" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: ch.qos.logback:logback-classic:1.2.11">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: ch.qos.logback:logback-core:1.2.11">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.3">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.3">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.3">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.3">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.3/jackson-datatype-jdk8-2.13.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.3">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.3/jackson-datatype-jsr310-2.13.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.3">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.3/jackson-module-parameter-names-2.13.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.3/jackson-module-parameter-names-2.13.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.3/jackson-module-parameter-names-2.13.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.jayway.jsonpath:json-path:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: jakarta.activation:jakarta.activation-api:1.2.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_10.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_10.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_10.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: net.bytebuddy:byte-buddy:1.12.10">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/bytebuddy/byte-buddy/1.12.10/byte-buddy-1.12.10-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_10.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_10.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_10.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: net.bytebuddy:byte-buddy-agent:1.12.10">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/bytebuddy/byte-buddy-agent/1.12.10/byte-buddy-agent-1.12.10.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/bytebuddy/byte-buddy-agent/1.12.10/byte-buddy-agent-1.12.10-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/bytebuddy/byte-buddy-agent/1.12.10/byte-buddy-agent-1.12.10-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: net.minidev:accessors-smart:2.4.8">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: net.minidev:json-smart:2.4.8">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/minidev/json-smart/2.4.8/json-smart-2.4.8.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/minidev/json-smart/2.4.8/json-smart-2.4.8-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/net/minidev/json-smart/2.4.8/json-smart-2.4.8-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apache.logging.log4j:log4j-api:2.17.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.17.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_63.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_63.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_63.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.63">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.63/tomcat-embed-core-9.0.63.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.63/tomcat-embed-core-9.0.63-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-core/9.0.63/tomcat-embed-core-9.0.63-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_63.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_63.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_63.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.63">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-el/9.0.63/tomcat-embed-el-9.0.63.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-el/9.0.63/tomcat-embed-el-9.0.63-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-el/9.0.63/tomcat-embed-el-9.0.63-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_63.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_63.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_63.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.63">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.63/tomcat-embed-websocket-9.0.63.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.63/tomcat-embed-websocket-9.0.63-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.63/tomcat-embed-websocket-9.0.63-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.apiguardian:apiguardian-api:1.1.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.assertj:assertj-core:3.22.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.hamcrest:hamcrest:2.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/hamcrest/hamcrest/2.2/hamcrest-2.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/hamcrest/hamcrest/2.2/hamcrest-2.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.jupiter:junit-jupiter:5.8.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.jupiter:junit-jupiter-api:5.8.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.jupiter:junit-jupiter-params:5.8.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.platform:junit-platform-commons:1.8.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.junit.platform:junit-platform-engine:1.8.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.mockito:mockito-core:4.5.1">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/mockito/mockito-core/4.5.1/mockito-core-4.5.1.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/mockito/mockito-core/4.5.1/mockito-core-4.5.1-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/mockito/mockito-core/4.5.1/mockito-core-4.5.1-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.mockito:mockito-junit-jupiter:4.5.1">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/mockito/mockito-junit-jupiter/4.5.1/mockito-junit-jupiter-4.5.1.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/mockito/mockito-junit-jupiter/4.5.1/mockito-junit-jupiter-4.5.1-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/mockito/mockito-junit-jupiter/4.5.1/mockito-junit-jupiter-4.5.1-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_objenesis_objenesis_3_2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_objenesis_objenesis_3_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_objenesis_objenesis_3_2.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.objenesis:objenesis:3.2">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/objenesis/objenesis/3.2/objenesis-3.2.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/objenesis/objenesis/3.2/objenesis-3.2-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/objenesis/objenesis/3.2/objenesis-3.2-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.opentest4j:opentest4j:1.2.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_ow2_asm_asm_9_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_ow2_asm_asm_9_1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_ow2_asm_asm_9_1.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.ow2.asm:asm:9.1">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/ow2/asm/asm/9.1/asm-9.1.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/ow2/asm/asm/9.1/asm-9.1-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/ow2/asm/asm/9.1/asm-9.1-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.skyscreamer:jsonassert:1.5.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.slf4j:jul-to-slf4j:1.7.36">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.slf4j:slf4j-api:1.7.36">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot/2.7.0/spring-boot-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot/2.7.0/spring-boot-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot/2.7.0/spring-boot-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-autoconfigure/2.7.0/spring-boot-autoconfigure-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-autoconfigure/2.7.0/spring-boot-autoconfigure-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-autoconfigure/2.7.0/spring-boot-autoconfigure-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-starter:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter/2.7.0/spring-boot-starter-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter/2.7.0/spring-boot-starter-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter/2.7.0/spring-boot-starter-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-starter-json:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-json/2.7.0/spring-boot-starter-json-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-json/2.7.0/spring-boot-starter-json-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-json/2.7.0/spring-boot-starter-json-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-starter-logging:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-logging/2.7.0/spring-boot-starter-logging-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-logging/2.7.0/spring-boot-starter-logging-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-logging/2.7.0/spring-boot-starter-logging-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-starter-test:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-test/2.7.0/spring-boot-starter-test-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-test/2.7.0/spring-boot-starter-test-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-test/2.7.0/spring-boot-starter-test-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-tomcat/2.7.0/spring-boot-starter-tomcat-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-tomcat/2.7.0/spring-boot-starter-tomcat-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-tomcat/2.7.0/spring-boot-starter-tomcat-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-starter-web:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-web/2.7.0/spring-boot-starter-web-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-web/2.7.0/spring-boot-starter-web-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-starter-web/2.7.0/spring-boot-starter-web-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-test:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-test/2.7.0/spring-boot-test-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-test/2.7.0/spring-boot-test-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-test/2.7.0/spring-boot-test-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.7.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-test-autoconfigure/2.7.0/spring-boot-test-autoconfigure-2.7.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-test-autoconfigure/2.7.0/spring-boot-test-autoconfigure-2.7.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/boot/spring-boot-test-autoconfigure/2.7.0/spring-boot-test-autoconfigure-2.7.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_aop_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_aop_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_aop_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-aop:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-aop/5.3.20/spring-aop-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-aop/5.3.20/spring-aop-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-aop/5.3.20/spring-aop-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_beans_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_beans_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_beans_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-beans:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-beans/5.3.20/spring-beans-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_context_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_context_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_context_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-context:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-context/5.3.20/spring-context-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-context/5.3.20/spring-context-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-context/5.3.20/spring-context-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_core_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_core_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_core_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-core:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-core/5.3.20/spring-core-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-core/5.3.20/spring-core-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-core/5.3.20/spring-core-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_expression_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_expression_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_expression_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-expression:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-expression/5.3.20/spring-expression-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-expression/5.3.20/spring-expression-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-expression/5.3.20/spring-expression-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_jcl_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_jcl_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_jcl_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-jcl:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-jcl/5.3.20/spring-jcl-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-jcl/5.3.20/spring-jcl-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-jcl/5.3.20/spring-jcl-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_test_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_test_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_test_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-test:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-test/5.3.20/spring-test-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-test/5.3.20/spring-test-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-test/5.3.20/spring-test-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_web_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_web_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_web_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-web:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-web/5.3.20/spring-web-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-web/5.3.20/spring-web-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-web/5.3.20/spring-web-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_springframework_spring_webmvc_5_3_20.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_springframework_spring_webmvc_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_springframework_spring_webmvc_5_3_20.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.springframework:spring-webmvc:5.3.20">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/springframework/spring-webmvc/5.3.20/spring-webmvc-5.3.20-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.xmlunit:xmlunit-core:2.9.0">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/xmlunit/xmlunit-core/2.9.0/xmlunit-core-2.9.0.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/xmlunit/xmlunit-core/2.9.0/xmlunit-core-2.9.0-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/xmlunit/xmlunit-core/2.9.0/xmlunit-core-2.9.0-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="Maven: org.yaml:snakeyaml:1.30">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar!/" />
++    </CLASSES>
++    <JAVADOC>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/yaml/snakeyaml/1.30/snakeyaml-1.30-javadoc.jar!/" />
++    </JAVADOC>
++    <SOURCES>
++      <root url="jar://$PROJECT_DIR$/../../myRepository/org/yaml/snakeyaml/1.30/snakeyaml-1.30-sources.jar!/" />
++    </SOURCES>
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/misc.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="JavaScriptSettings">
++    <option name="languageLevel" value="ES6" />
++  </component>
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/modules.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/gulimall.iml" filepath="$PROJECT_DIR$/.idea/gulimall.iml" />
++      <module fileurl="file://$PROJECT_DIR$/gulimall-coupon/gulimall-coupon.iml" filepath="$PROJECT_DIR$/gulimall-coupon/gulimall-coupon.iml" />
++      <module fileurl="file://$PROJECT_DIR$/gulimall-member/gulimall-member.iml" filepath="$PROJECT_DIR$/gulimall-member/gulimall-member.iml" />
++      <module fileurl="file://$PROJECT_DIR$/gulimall-order/gulimall-order.iml" filepath="$PROJECT_DIR$/gulimall-order/gulimall-order.iml" />
++      <module fileurl="file://$PROJECT_DIR$/gulimall-product/gulimall-product.iml" filepath="$PROJECT_DIR$/gulimall-product/gulimall-product.iml" />
++      <module fileurl="file://$PROJECT_DIR$/gulimall-ware/gulimall-ware.iml" filepath="$PROJECT_DIR$/gulimall-ware/gulimall-ware.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ .idea/vcs.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: gulimall-coupon/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-coupon/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-coupon/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,57 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
++	<parent>
++		<groupId>org.springframework.boot</groupId>
++		<artifactId>spring-boot-starter-parent</artifactId>
++		<version>2.7.0</version>
++		<relativePath/> <!-- lookup parent from repository -->
++	</parent>
++	<groupId>com.atguigu.gulimall</groupId>
++	<artifactId>gulimall-coupon</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<name>gulimall-coupon</name>
++	<description>优惠券服务</description>
++	<properties>
++		<java.version>1.8</java.version>
++		<spring-cloud.version>2021.0.3</spring-cloud.version>
++	</properties>
++	<dependencies>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-web</artifactId>
++		</dependency>
++		<dependency>
++			<groupId>org.springframework.cloud</groupId>
++			<artifactId>spring-cloud-starter-openfeign</artifactId>
++		</dependency>
++
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-test</artifactId>
++			<scope>test</scope>
++		</dependency>
++	</dependencies>
++	<dependencyManagement>
++		<dependencies>
++			<dependency>
++				<groupId>org.springframework.cloud</groupId>
++				<artifactId>spring-cloud-dependencies</artifactId>
++				<version>Hoxton.SR9</version>
++				<type>pom</type>
++				<scope>import</scope>
++			</dependency>
++		</dependencies>
++	</dependencyManagement>
++
++	<build>
++		<plugins>
++			<plugin>
++				<groupId>org.springframework.boot</groupId>
++				<artifactId>spring-boot-maven-plugin</artifactId>
++			</plugin>
++		</plugins>
++	</build>
++
++</project>
+Index: gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/GulimallCouponApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/GulimallCouponApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-coupon/src/main/java/com/atguigu/gulimall/coupon/GulimallCouponApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.coupon;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class GulimallCouponApplication {
++
++	public static void main(String[] args) {
++		SpringApplication.run(GulimallCouponApplication.class, args);
++	}
++
++}
+Index: gulimall-coupon/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-coupon/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-coupon/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,1 @@
++
+Index: gulimall-coupon/src/test/java/com/atguigu/gulimall/coupon/GulimallCouponApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-coupon/src/test/java/com/atguigu/gulimall/coupon/GulimallCouponApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-coupon/src/test/java/com/atguigu/gulimall/coupon/GulimallCouponApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.coupon;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class GulimallCouponApplicationTests {
++
++	@Test
++	void contextLoads() {
++	}
++
++}
+Index: gulimall-member/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-member/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-member/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,57 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
++	<parent>
++		<groupId>org.springframework.boot</groupId>
++		<artifactId>spring-boot-starter-parent</artifactId>
++		<version>2.7.0</version>
++		<relativePath/> <!-- lookup parent from repository -->
++	</parent>
++	<groupId>com.atguigu.gulimall</groupId>
++	<artifactId>gulimall-member</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<name>gulimall-member</name>
++	<description>用户服务</description>
++	<properties>
++		<java.version>1.8</java.version>
++		<spring-cloud.version>2021.0.3</spring-cloud.version>
++	</properties>
++	<dependencies>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-web</artifactId>
++		</dependency>
++		<dependency>
++			<groupId>org.springframework.cloud</groupId>
++			<artifactId>spring-cloud-starter-openfeign</artifactId>
++		</dependency>
++
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-test</artifactId>
++			<scope>test</scope>
++		</dependency>
++	</dependencies>
++	<dependencyManagement>
++		<dependencies>
++			<dependency>
++				<groupId>org.springframework.cloud</groupId>
++				<artifactId>spring-cloud-dependencies</artifactId>
++				<version>Hoxton.SR9</version>
++				<type>pom</type>
++				<scope>import</scope>
++			</dependency>
++		</dependencies>
++	</dependencyManagement>
++
++	<build>
++		<plugins>
++			<plugin>
++				<groupId>org.springframework.boot</groupId>
++				<artifactId>spring-boot-maven-plugin</artifactId>
++			</plugin>
++		</plugins>
++	</build>
++
++</project>
+Index: gulimall-member/src/main/java/com/atguigu/gulimall/member/GulimallMemberApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-member/src/main/java/com/atguigu/gulimall/member/GulimallMemberApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-member/src/main/java/com/atguigu/gulimall/member/GulimallMemberApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.member;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class GulimallMemberApplication {
++
++	public static void main(String[] args) {
++		SpringApplication.run(GulimallMemberApplication.class, args);
++	}
++
++}
+Index: gulimall-member/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-member/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-member/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,1 @@
++
+Index: gulimall-member/src/test/java/com/atguigu/gulimall/member/GulimallMemberApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-member/src/test/java/com/atguigu/gulimall/member/GulimallMemberApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-member/src/test/java/com/atguigu/gulimall/member/GulimallMemberApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.member;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class GulimallMemberApplicationTests {
++
++	@Test
++	void contextLoads() {
++	}
++
++}
+Index: gulimall-order/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-order/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-order/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,57 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
++	<parent>
++		<groupId>org.springframework.boot</groupId>
++		<artifactId>spring-boot-starter-parent</artifactId>
++		<version>2.7.0</version>
++		<relativePath/> <!-- lookup parent from repository -->
++	</parent>
++	<groupId>com.atguigu.gulimall</groupId>
++	<artifactId>gulimall-order</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<name>gulimall-order</name>
++	<description>仓储服务</description>
++	<properties>
++		<java.version>1.8</java.version>
++		<spring-cloud.version>2021.0.3</spring-cloud.version>
++	</properties>
++	<dependencies>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-web</artifactId>
++		</dependency>
++		<dependency>
++			<groupId>org.springframework.cloud</groupId>
++			<artifactId>spring-cloud-starter-openfeign</artifactId>
++		</dependency>
++
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-test</artifactId>
++			<scope>test</scope>
++		</dependency>
++	</dependencies>
++	<dependencyManagement>
++		<dependencies>
++			<dependency>
++				<groupId>org.springframework.cloud</groupId>
++				<artifactId>spring-cloud-dependencies</artifactId>
++				<version>Hoxton.SR9</version>
++				<type>pom</type>
++				<scope>import</scope>
++			</dependency>
++		</dependencies>
++	</dependencyManagement>
++
++	<build>
++		<plugins>
++			<plugin>
++				<groupId>org.springframework.boot</groupId>
++				<artifactId>spring-boot-maven-plugin</artifactId>
++			</plugin>
++		</plugins>
++	</build>
++
++</project>
+Index: gulimall-order/src/main/java/com/atguigu/gulimall/order/GulimallOrderApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-order/src/main/java/com/atguigu/gulimall/order/GulimallOrderApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-order/src/main/java/com/atguigu/gulimall/order/GulimallOrderApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.order;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class GulimallOrderApplication {
++
++	public static void main(String[] args) {
++		SpringApplication.run(GulimallOrderApplication.class, args);
++	}
++
++}
+Index: gulimall-order/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-order/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-order/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,1 @@
++
+Index: gulimall-order/src/test/java/com/atguigu/gulimall/order/GulimallOrderApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-order/src/test/java/com/atguigu/gulimall/order/GulimallOrderApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-order/src/test/java/com/atguigu/gulimall/order/GulimallOrderApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.order;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class GulimallOrderApplicationTests {
++
++	@Test
++	void contextLoads() {
++	}
++
++}
+Index: gulimall-product/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-product/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-product/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,57 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
++	<parent>
++		<groupId>org.springframework.boot</groupId>
++		<artifactId>spring-boot-starter-parent</artifactId>
++		<version>2.7.0</version>
++		<relativePath/> <!-- lookup parent from repository -->
++	</parent>
++	<groupId>om.atguigu.gulimall</groupId>
++	<artifactId>gulimall-product</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<name>gulimall-product</name>
++	<description>商品服务</description>
++	<properties>
++		<java.version>1.8</java.version>
++		<spring-cloud.version>2021.0.3</spring-cloud.version>
++	</properties>
++	<dependencies>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-web</artifactId>
++		</dependency>
++		<dependency>
++			<groupId>org.springframework.cloud</groupId>
++			<artifactId>spring-cloud-starter-openfeign</artifactId>
++		</dependency>
++
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-test</artifactId>
++			<scope>test</scope>
++		</dependency>
++	</dependencies>
++	<dependencyManagement>
++		<dependencies>
++			<dependency>
++				<groupId>org.springframework.cloud</groupId>
++				<artifactId>spring-cloud-dependencies</artifactId>
++				<version>Hoxton.SR9</version>
++				<type>pom</type>
++				<scope>import</scope>
++			</dependency>
++		</dependencies>
++	</dependencyManagement>
++
++	<build>
++		<plugins>
++			<plugin>
++				<groupId>org.springframework.boot</groupId>
++				<artifactId>spring-boot-maven-plugin</artifactId>
++			</plugin>
++		</plugins>
++	</build>
++
++</project>
+Index: gulimall-product/src/main/java/om/atguigu/gulimall/product/GulimallProductApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-product/src/main/java/om/atguigu/gulimall/product/GulimallProductApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-product/src/main/java/om/atguigu/gulimall/product/GulimallProductApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package om.atguigu.gulimall.product;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class GulimallProductApplication {
++
++	public static void main(String[] args) {
++		SpringApplication.run(GulimallProductApplication.class, args);
++	}
++
++}
+Index: gulimall-product/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-product/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-product/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,1 @@
++
+Index: gulimall-product/src/test/java/om/atguigu/gulimall/product/GulimallProductApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-product/src/test/java/om/atguigu/gulimall/product/GulimallProductApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-product/src/test/java/om/atguigu/gulimall/product/GulimallProductApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package om.atguigu.gulimall.product;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class GulimallProductApplicationTests {
++
++	@Test
++	void contextLoads() {
++	}
++
++}
+Index: gulimall-ware/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-ware/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-ware/pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,57 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
++	<parent>
++		<groupId>org.springframework.boot</groupId>
++		<artifactId>spring-boot-starter-parent</artifactId>
++		<version>2.7.0</version>
++		<relativePath/> <!-- lookup parent from repository -->
++	</parent>
++	<groupId>com.atguigu.gulimall</groupId>
++	<artifactId>gulimall-ware</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<name>gulimall-ware</name>
++	<description>仓储服务</description>
++	<properties>
++		<java.version>1.8</java.version>
++		<spring-cloud.version>2021.0.3</spring-cloud.version>
++	</properties>
++	<dependencies>
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-web</artifactId>
++		</dependency>
++		<dependency>
++			<groupId>org.springframework.cloud</groupId>
++			<artifactId>spring-cloud-starter-openfeign</artifactId>
++		</dependency>
++
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-test</artifactId>
++			<scope>test</scope>
++		</dependency>
++	</dependencies>
++	<dependencyManagement>
++		<dependencies>
++			<dependency>
++				<groupId>org.springframework.cloud</groupId>
++				<artifactId>spring-cloud-dependencies</artifactId>
++				<version>Hoxton.SR9</version>
++				<type>pom</type>
++				<scope>import</scope>
++			</dependency>
++		</dependencies>
++	</dependencyManagement>
++
++	<build>
++		<plugins>
++			<plugin>
++				<groupId>org.springframework.boot</groupId>
++				<artifactId>spring-boot-maven-plugin</artifactId>
++			</plugin>
++		</plugins>
++	</build>
++
++</project>
+Index: gulimall-ware/src/main/java/com/atguigu/gulimall/ware/GulimallWareApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-ware/src/main/java/com/atguigu/gulimall/ware/GulimallWareApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-ware/src/main/java/com/atguigu/gulimall/ware/GulimallWareApplication.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.ware;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class GulimallWareApplication {
++
++	public static void main(String[] args) {
++		SpringApplication.run(GulimallWareApplication.class, args);
++	}
++
++}
+Index: gulimall-ware/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-ware/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-ware/src/main/resources/application.properties	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,1 @@
++
+Index: gulimall-ware/src/test/java/com/atguigu/gulimall/ware/GulimallWareApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gulimall-ware/src/test/java/com/atguigu/gulimall/ware/GulimallWareApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ gulimall-ware/src/test/java/com/atguigu/gulimall/ware/GulimallWareApplicationTests.java	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,13 @@
++package com.atguigu.gulimall.ware;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class GulimallWareApplicationTests {
++
++	@Test
++	void contextLoads() {
++	}
++
++}
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
++++ pom.xml	(revision 4b58aaed2b16e5377a43a014d34eabc9c7e712ea)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
++	<groupId>com.atguigu.gulimall</groupId>
++	<artifactId>gulimall</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<name>gulimall</name>
++	<description>聚合服务</description>
++	<packaging>pom</packaging>
++	<modules>
++		<module>gulimall-coupon</module>
++		<module>gulimall-member</module>
++		<module>gulimall-order</module>
++		<module>gulimall-product</module>
++		<module>gulimall-ware</module>
++	</modules>
++
++
++</project>
