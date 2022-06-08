@@ -10,5 +10,5 @@ public class GulimallCouponApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GulimallCouponApplication.class, args);
 	}
-	int a = 0;
+
 }
